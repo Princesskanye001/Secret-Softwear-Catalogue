@@ -16,6 +16,7 @@
         }
         .catalogue {
             display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto new lines */
             justify-content: space-between;
             width: 100%;
             max-width: 1200px;
@@ -26,25 +27,34 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 45%;
+            width: 100%;
+            max-width: 45%;
+            box-sizing: border-box;
         }
         .item {
-            text-align: center; /* Centers the text and price */
-            margin-bottom: 20px; /* Adds space between items */
+            text-align: center;
+            margin-bottom: 20px;
         }
         .item img {
-            width: 430px;
-            height: 430px;
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 430px; /* Limit maximum width */
+            max-height: 430px; /* Limit maximum height */
         }
         .price {
-            font-size: 1.2em; /* Adjusts font size for prices */
-            color: #333; /* Sets the color of the price text */
-            margin-top: 5px; /* Adds space between image and price */
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 5px;
         }
         .name {
-            font-size: 1.2em; /* Adjusts font size for product name */
-            font-weight: bold; /* Makes the product name bold */
-            margin-top: 10px; /* Adds space between name and image */
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .left-side, .center-side {
+                max-width: 100%; /* Full width on small screens */
+            }
         }
     </style>
 </head>
