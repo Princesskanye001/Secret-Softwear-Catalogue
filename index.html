@@ -6,6 +6,20 @@
     <title>Secret Softwear Catalogue</title>
     <style>
         .item {
+            text-align: left; /* Centers the image and price */
+            margin-bottom: 20px; /* Adds space between items */
+        }
+        .item img {
+            width: 430px;
+            height: 430px;
+        }
+        .price {
+            font-size: 1.2em; /* Adjusts font size for prices */
+            color: #333; /* Sets the color of the price text */
+            margin-top: 2px; /* Adds space between image and price */
+        }
+
+        .centerItem {
             text-align: center; /* Centers the image and price */
             margin-bottom: 20px; /* Adds space between items */
         }
@@ -16,7 +30,7 @@
         .price {
             font-size: 1.2em; /* Adjusts font size for prices */
             color: #333; /* Sets the color of the price text */
-            margin-top: 5px; /* Adds space between image and price */
+            margin-top: 2px; /* Adds space between image and price */
         }
     </style>
 </head>
@@ -24,13 +38,22 @@
     <h1>Welcome to the Secret Softwear Catalogue</h1>
     <p>Explore our latest collection!</p>
     <ul>
-        <li class="item">
+        <li class="centerItem">
             <img src="images/blackbeanie.JPG" alt="Black Beanie">
             <p class="price">R80</p> <!-- Price for the first item -->
         </li>
-        <li class="item">
+        <li class="centerItem">
             <img src="images/blackbuckethat.JPG" alt="Black Bucket Hat">
-            <p class="price">$100</p> <!-- Price for the second item -->
+            <p class="price">R100</p> <!-- Price for the second item -->
+        </li>
+
+        <li class="centerItem">
+            <img src="images/blackhoodie.JPG" alt="Black Hoodie">
+            <p class="price">R300</p> <!-- Price for the first item -->
+        </li>
+        <li class="centerItem">
+            <img src="images/whitehoodie.JPG" alt="White Hoodie">
+            <p class="price">R300</p> <!-- Price for the second item -->
         </li>
     </ul>
 </body>
