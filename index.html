@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Softwear Catalogue</title>
+    <style>
+        .item {
+            text-align: center; /* Centers the image and price */
+            margin-bottom: 20px; /* Adds space between items */
+        }
+        .item img {
+            width: 430px;
+            height: 430px;
+        }
+        .price {
+            font-size: 1.2em; /* Adjusts font size for prices */
+            color: #333; /* Sets the color of the price text */
+            margin-top: 5px; /* Adds space between image and price */
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the Secret Softwear Catalogue</h1>
     <p>Explore our latest collection!</p>
     <ul>
-        <li>
-                <img src="images/blackbeanie.JPG" alt="Example 1" style="width:430px;height:430px;">
-                
-            
+        <li class="item">
+            <img src="images/blackbeanie.JPG" alt="Black Beanie">
+            <p class="price">R80</p> <!-- Price for the first item -->
         </li>
-        <li>
-          
-                <img src="images/blackbuckethat.JPG" alt="Example 2" style="width:430px;height:430px;">
-               
-           
+        <li class="item">
+            <img src="images/blackbuckethat.JPG" alt="Black Bucket Hat">
+            <p class="price">$100</p> <!-- Price for the second item -->
         </li>
-       
     </ul>
 </body>
 </html>
