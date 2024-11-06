@@ -1,4 +1,4 @@
-# Secret-Softwear Catalogue
+# Secret-Softwear
 
 ## Overview
 The **Secret-Softwear Catalogue** is a front-end e-commerce website developed using **React**. It allows users to browse products, view detailed information, and add items to their shopping cart.
